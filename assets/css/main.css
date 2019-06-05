@@ -3737,7 +3737,8 @@ input, select, textarea {
 		display: -webkit-flex;
 		display: -ms-flex;
 		display: flex;
-		max-width: 45em;
+		/* max-width: 45em;  (OG Code) */
+		text-align: center; /* Added by Arvin */
 	}
 
 		#cta .inner header {
@@ -3745,8 +3746,9 @@ input, select, textarea {
 			-webkit-order: 1;
 			-ms-order: 1;
 			order: 1;
-			padding-right: 3em;
-			width: 70%;
+			/* padding-right: 3em;
+			width: 70%; (OG Code)*/
+			width: 100%; /* Added by Arvin */
 		}
 
 			#cta .inner header p {
