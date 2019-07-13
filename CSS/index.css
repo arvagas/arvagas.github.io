@@ -215,11 +215,11 @@ header nav {
 .cta-btn {
   font-size: 3rem;
 }
-.about {
+.about-section {
   color: white;
   background: linear-gradient(#49174d, #54135c);
   display: flex;
-  padding: 4rem;
+  padding: 6rem 4rem;
   justify-content: space-around;
 }
 .about-left {
