@@ -156,3 +156,37 @@ a {
   max-width: 100vw;
   height: 100vh;
 }
+.cta-image {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/cta/banner.jpg);
+  height: 50%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+.cta-content,
+.cta-bottom {
+  text-align: center;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+}
+.cta-content {
+  top: 50%;
+}
+.cta-bottom {
+  top: 90%;
+}
+.cta-name {
+  font-size: 8rem;
+}
+.cta-about {
+  font-size: 6rem;
+}
+.cta-btn {
+  font-size: 3rem;
+  padding: 10px 20px;
+  background-color: purple;
+  border-radius: 50px;
+}
