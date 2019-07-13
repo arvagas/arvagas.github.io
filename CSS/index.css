@@ -215,3 +215,36 @@ header nav {
 .cta-btn {
   font-size: 3rem;
 }
+footer {
+  color: white;
+  background: linear-gradient(#54135c, #814885);
+}
+.footer-content {
+  display: flex;
+  justify-content: center;
+  padding-top: 2rem;
+}
+.footer-prof-img {
+  width: 225px;
+  border-radius: 50%;
+  border: solid white 4px;
+  margin: 4rem;
+}
+.footer-info {
+  align-self: center;
+}
+.footer-icon-bar {
+  margin-top: 1rem;
+}
+.footer-icon-bar a {
+  color: white;
+  margin-left: 1.6rem;
+}
+.footer-icon-bar a:first-child {
+  margin-left: 0;
+}
+.footer-copyright {
+  text-align: center;
+  font-size: 2.4rem;
+  padding-bottom: 2rem;
+}
