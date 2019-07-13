@@ -156,6 +156,34 @@ a {
   max-width: 100vw;
   height: 100vh;
 }
+header {
+  display: flex;
+  justify-content: space-between;
+  color: white;
+  position: fixed;
+  width: 100%;
+  z-index: 100;
+  padding: 20px;
+  border-bottom: solid 2px white;
+}
+header nav {
+  text-align: right;
+  align-self: center;
+  max-width: 350px;
+  width: 100%;
+}
+.header-name {
+  font-size: 2.4rem;
+}
+.header-links {
+  font-size: 2.4rem;
+  margin-right: 50px;
+  text-decoration: none;
+  cursor: pointer;
+}
+.header-links:last-child {
+  margin-right: 0;
+}
 .cta-image {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/cta/banner.jpg);
   height: 50%;
@@ -176,7 +204,7 @@ a {
   top: 50%;
 }
 .cta-bottom {
-  top: 90%;
+  top: 95%;
 }
 .cta-name {
   font-size: 8rem;
@@ -186,7 +214,4 @@ a {
 }
 .cta-btn {
   font-size: 3rem;
-  padding: 10px 20px;
-  background-color: purple;
-  border-radius: 50px;
 }
