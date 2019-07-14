@@ -186,7 +186,7 @@ header nav {
 }
 .cta-image {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/cta/banner.jpg);
-  height: 50%;
+  height: 100vh;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -204,7 +204,7 @@ header nav {
   top: 50%;
 }
 .cta-bottom {
-  top: 95%;
+  top: 98%;
 }
 .cta-name {
   font-size: 8rem;
@@ -295,6 +295,10 @@ header nav {
   bottom: 1%;
 }
 .projects-section {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  position: relative;
   height: 100vh;
 }
 footer {
