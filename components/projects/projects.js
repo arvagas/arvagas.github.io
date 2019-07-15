@@ -7,7 +7,7 @@ const projectArray = [
         deploy:'https://immunization-tracker.netlify.com',
         repo:'https://github.com/immunization-tracker/immunization-tracker-UI',
         design: 'https://designer.gravit.io/?token=9MdZAdiV5YcYD2dddEWD_JPy0gE9Rk-9',
-        responsibility:'Create a wireframe that will be used as a starting point.;Collaborate with other UI developers on creating a landing page.;Create a solo page (Help) to demonstrate personal ability.'
+        responsibility:'Created a wireframe that was used as a starting point.;Collaborated with other UI developers on creating a landing page.;Created a solo page (Help) to demonstrate understanding of HTML/CSS/JavaScript.'
     },
     {
         title:'Portfolio',
@@ -17,7 +17,7 @@ const projectArray = [
         deploy:'https://arvinagas.com',
         repo:'https://github.com/arvagas/arvagas.github.io',
         design: null,
-        responsibility:'Utilize the knowledge acquired to create a website marketing myself to show the world what they\'re missing out on.'
+        responsibility:'Utilized the knowledge acquired to create a website marketing myself to show the world what they\'re missing out on.'
     },
 ]
 
