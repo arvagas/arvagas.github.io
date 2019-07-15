@@ -7,6 +7,15 @@
         height: 100vh;
         background: whitesmoke;
         padding: 8rem 0 0;
+
+        @media @tablet {
+            height: initial;
+            padding: 8rem 0;
+        }
+
+        @media @phone {
+            padding: 6rem 0;
+        }
     }
 
     .projects-header {
@@ -15,6 +24,10 @@
 
         @media @tablet {
             font-size: 5rem;
+        }
+
+        @media @phone {
+            font-size: 3rem;
         }
     }
 
@@ -42,6 +55,10 @@
         @media @tablet {
             font-size: 3.2rem;
         }
+
+        @media @phone {
+            font-size: 2.4rem;
+        }
     }
 
     .project-desc {
@@ -50,15 +67,26 @@
         @media @tablet {
             font-size: 2.4rem;
         }
+
+        @media @phone {
+            font-size: 1.8rem;
+        }
     }
 
     .project-links {
         display: flex;
         margin: 1rem 0;
 
+        @media @phone {
+            justify-content: center;
+        }
+
         a, p {
             font-size: 2rem;
-
+            
+            @media @phone {
+                font-size: 1.6rem;
+            }
         }
 
         p {
@@ -71,9 +99,19 @@
         list-style: circle;
         padding-left: 20px;
         margin-bottom: 1rem;
+
+        li {
+            @media @phone {
+                font-size: 1.6rem;
+            }
+        }
     }
 
     .project-tech {
         font-size: 2rem;
+
+        @media @phone {
+            font-size: 1.6rem;
+        }
     }
 }
