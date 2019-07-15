@@ -16,22 +16,26 @@ header {
     .mobile-btn {
         display: none;
         align-self: center;
+        cursor: pointer;
     
         @media @phone {
             display: block;
         }
     }
 
+    .nav-container {
+        @media @phone {
+            display: none;
+            width: 100%;
+        }
+    }
+
     nav {
         display: flex;
         text-align: right;
-        align-self: center;
-        max-width: 350px;
 
         @media @phone {
             flex-direction: column;
-            align-items: center;
-            width: 100%;
         }
     }
 }
@@ -65,7 +69,7 @@ header {
         }
     }
 
-    &:visited {
+    &:link, &:visited {
         color: white;
     }
 

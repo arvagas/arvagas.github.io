@@ -175,23 +175,26 @@ header {
 header .mobile-btn {
   display: none;
   align-self: center;
+  cursor: pointer;
 }
 @media (max-width: 500px) {
   header .mobile-btn {
     display: block;
   }
 }
+@media (max-width: 500px) {
+  header .nav-container {
+    display: none;
+    width: 100%;
+  }
+}
 header nav {
   display: flex;
   text-align: right;
-  align-self: center;
-  max-width: 350px;
 }
 @media (max-width: 500px) {
   header nav {
     flex-direction: column;
-    align-items: center;
-    width: 100%;
   }
 }
 .header-name {
@@ -222,6 +225,7 @@ header nav {
     border-bottom: solid white 1px;
   }
 }
+.header-links:link,
 .header-links:visited {
   color: white;
 }

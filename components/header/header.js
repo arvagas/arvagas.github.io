@@ -11,5 +11,12 @@ $(document).ready(() => {
 })
 
 $('.mobile-btn').click(() => {
-    $('nav').slideToggle()
+    $('.nav-container').slideToggle()
+})
+
+$(document).ready(() => {
+    $(window).resize(() => {
+        if ($(window).width() > 500) $('.nav-container').show()
+        else $('.nav-container').slideUp()
+    })
 })
