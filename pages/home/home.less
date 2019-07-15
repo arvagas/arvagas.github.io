@@ -1,10 +1,11 @@
 .about-section {
     color: white;
     background: linear-gradient(#3f1542, #54135c);
-    padding: 10rem 4rem 0;
+    padding: 0 4rem;
     display: flex;
     flex-direction: column;
     align-content: center;
+    justify-content: center;
     height: 100vh;
     position: relative;
 }
@@ -12,6 +13,10 @@
 .about-content {
     display: flex;
     justify-content: space-around;
+
+    @media @tablet {
+        flex-direction: column;
+    }
 }
 
 .about-left {
@@ -20,9 +25,20 @@
     justify-content: center;
     width: 30%;
 
+    @media @tablet {
+        order: 3;
+        width: 100%;
+    }
+
     p {
         font-size: 2rem;
         margin: 1rem 0;
+    }
+
+    .about-quote {
+        @media @tablet {
+            display: none;
+        }
     }
 }
 
@@ -31,14 +47,20 @@
     flex-direction: column;
     width: 30%;
 
+    @media @tablet {
+        width: 100%;
+    }
+
     .about-img {
         align-self: center;
         max-width: 100%;
-        // width: 100%;
-        // max-height: 450px;
         height: auto;
         border: solid white 8px;
         border-radius: 50%;
+
+        @media @tablet {
+            width: 50%;
+        }
     }
     
     .about-info {
@@ -46,6 +68,10 @@
         
         h1 {
             font-size: 8rem;
+
+            @media @tablet {
+                font-size: 6rem;
+            }
         }
     
         h2 {
@@ -66,6 +92,10 @@
         p {
             font-size: 3rem;
             padding: 0 2rem;
+
+            @media @tablet {
+                font-size: 2rem;
+            }
         }
     }
 }
@@ -77,14 +107,57 @@
     width: 30%;
     text-align: right;
 
+    @media @tablet {
+        text-align: left;
+        width: 100%;
+        margin: 1rem 0;
+    }
+
     h2 {
         font-size: 3.6rem;
         text-decoration: underline;
+
+        @media @tablet {
+            font-size: 3.2rem;
+            text-decoration: none;
+
+            &:after {
+                content: ': ';
+                white-space: pre;
+            }
+        }
     }
 
     p {
         font-size: 2rem;
         margin: 1rem 0;
+
+        @media @tablet {
+            margin: 0;
+            
+            &:not(:last-child):after {
+                content: ', ';
+                white-space: pre;
+            }
+        }
+    }
+
+    .about-stack {
+
+        @media @tablet {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: baseline;
+        }
+    }
+
+    .about-skills {
+
+        @media @tablet {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: baseline;
+        }
     }
 }
 

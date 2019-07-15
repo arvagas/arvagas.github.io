@@ -228,10 +228,11 @@ footer {
 .about-section {
   color: white;
   background: linear-gradient(#3f1542, #54135c);
-  padding: 10rem 4rem 0;
+  padding: 0 4rem;
   display: flex;
   flex-direction: column;
   align-content: center;
+  justify-content: center;
   height: 100vh;
   position: relative;
 }
@@ -239,20 +240,41 @@ footer {
   display: flex;
   justify-content: space-around;
 }
+@media (max-width: 800px) {
+  .about-content {
+    flex-direction: column;
+  }
+}
 .about-left {
   display: flex;
   flex-direction: column;
   justify-content: center;
   width: 30%;
 }
+@media (max-width: 800px) {
+  .about-left {
+    order: 3;
+    width: 100%;
+  }
+}
 .about-left p {
   font-size: 2rem;
   margin: 1rem 0;
+}
+@media (max-width: 800px) {
+  .about-left .about-quote {
+    display: none;
+  }
 }
 .about-middle {
   display: flex;
   flex-direction: column;
   width: 30%;
+}
+@media (max-width: 800px) {
+  .about-middle {
+    width: 100%;
+  }
 }
 .about-middle .about-img {
   align-self: center;
@@ -261,11 +283,21 @@ footer {
   border: solid white 8px;
   border-radius: 50%;
 }
+@media (max-width: 800px) {
+  .about-middle .about-img {
+    width: 50%;
+  }
+}
 .about-middle .about-info {
   text-align: center;
 }
 .about-middle .about-info h1 {
   font-size: 8rem;
+}
+@media (max-width: 800px) {
+  .about-middle .about-info h1 {
+    font-size: 6rem;
+  }
 }
 .about-middle .about-info h2 {
   font-size: 4rem;
@@ -283,6 +315,11 @@ footer {
   font-size: 3rem;
   padding: 0 2rem;
 }
+@media (max-width: 800px) {
+  .about-middle .about-socials p {
+    font-size: 2rem;
+  }
+}
 .about-right {
   display: flex;
   flex-direction: column;
@@ -290,13 +327,53 @@ footer {
   width: 30%;
   text-align: right;
 }
+@media (max-width: 800px) {
+  .about-right {
+    text-align: left;
+    width: 100%;
+    margin: 1rem 0;
+  }
+}
 .about-right h2 {
   font-size: 3.6rem;
   text-decoration: underline;
 }
+@media (max-width: 800px) {
+  .about-right h2 {
+    font-size: 3.2rem;
+    text-decoration: none;
+  }
+  .about-right h2:after {
+    content: ': ';
+    white-space: pre;
+  }
+}
 .about-right p {
   font-size: 2rem;
   margin: 1rem 0;
+}
+@media (max-width: 800px) {
+  .about-right p {
+    margin: 0;
+  }
+  .about-right p:not(:last-child):after {
+    content: ', ';
+    white-space: pre;
+  }
+}
+@media (max-width: 800px) {
+  .about-right .about-stack {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+  }
+}
+@media (max-width: 800px) {
+  .about-right .about-skills {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+  }
 }
 .about-btn {
   font-size: 3rem;
@@ -322,6 +399,8 @@ footer {
   color: white;
 }
 .cta-content {
+  max-width: 1000px;
+  width: 100%;
   top: 50%;
 }
 .cta-bottom {
@@ -330,8 +409,18 @@ footer {
 .cta-name {
   font-size: 8rem;
 }
+@media (max-width: 800px) {
+  .cta-name {
+    font-size: 7rem;
+  }
+}
 .cta-about {
   font-size: 6rem;
+}
+@media (max-width: 800px) {
+  .cta-about {
+    font-size: 5rem;
+  }
 }
 .cta-btn {
   font-size: 3rem;
@@ -350,6 +439,11 @@ footer {
   text-align: center;
   font-size: 6rem;
 }
+@media (max-width: 800px) {
+  .home-container .projects-header {
+    font-size: 5rem;
+  }
+}
 .home-container .projects-content {
   display: flex;
   flex-direction: column;
@@ -366,12 +460,27 @@ footer {
   border: solid 1px;
   border-color: black;
 }
+@media (max-width: 800px) {
+  .home-container .project-container {
+    margin: 1rem 0;
+  }
+}
 .home-container .project-title {
   font-size: 4rem;
   text-decoration: underline;
 }
+@media (max-width: 800px) {
+  .home-container .project-title {
+    font-size: 3.2rem;
+  }
+}
 .home-container .project-desc {
   font-size: 3rem;
+}
+@media (max-width: 800px) {
+  .home-container .project-desc {
+    font-size: 2.4rem;
+  }
 }
 .home-container .project-links {
   display: flex;

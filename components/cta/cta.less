@@ -16,6 +16,8 @@
 }
 
 .cta-content {
+    max-width: 1000px;
+    width: 100%;
     top: 50%;
 }
 
@@ -25,14 +27,18 @@
 
 .cta-name {
     font-size: 8rem;
-    // -webkit-text-stroke-width: 1px;
-    // -webkit-text-stroke-color: black;
+
+    @media @tablet {
+        font-size: 7rem;
+    }
 }
 
 .cta-about {
     font-size: 6rem;
-    // -webkit-text-stroke-width: 1px;
-    // -webkit-text-stroke-color: black;
+
+    @media @tablet {
+        font-size: 5rem;
+    }
 }
 
 .cta-btn {
