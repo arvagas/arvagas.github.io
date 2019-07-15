@@ -175,23 +175,26 @@ header {
 header .mobile-btn {
   display: none;
   align-self: center;
+  cursor: pointer;
 }
 @media (max-width: 500px) {
   header .mobile-btn {
     display: block;
   }
 }
+@media (max-width: 500px) {
+  header .nav-container {
+    display: none;
+    width: 100%;
+  }
+}
 header nav {
   display: flex;
   text-align: right;
-  align-self: center;
-  max-width: 350px;
 }
 @media (max-width: 500px) {
   header nav {
     flex-direction: column;
-    align-items: center;
-    width: 100%;
   }
 }
 .header-name {
@@ -222,6 +225,7 @@ header nav {
     border-bottom: solid white 1px;
   }
 }
+.header-links:link,
 .header-links:visited {
   color: white;
 }
@@ -246,6 +250,8 @@ footer {
   .footer-content {
     flex-direction: column;
     align-items: center;
+    justify-content: center;
+    position: relative;
   }
 }
 .footer-prof-img {
@@ -256,8 +262,11 @@ footer {
 }
 @media (max-width: 500px) {
   .footer-prof-img {
-    width: 125px;
-    margin: 1rem;
+    width: 120px;
+    margin: 0;
+    align-self: center;
+    position: absolute;
+    top: -55px;
   }
 }
 .footer-info {
@@ -268,6 +277,7 @@ footer {
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-top: 5rem;
   }
 }
 @media (max-width: 500px) {
@@ -338,6 +348,11 @@ footer {
   margin: 1rem 0;
 }
 @media (max-width: 800px) {
+  .about-left p {
+    font-size: 1.6rem;
+  }
+}
+@media (max-width: 800px) {
   .about-left .about-quote {
     display: none;
   }
@@ -362,11 +377,13 @@ footer {
 @media (max-width: 800px) {
   .about-middle .about-img {
     width: 60%;
+    border: solid white 6px;
   }
 }
 @media (max-width: 500px) {
   .about-middle .about-img {
-    width: 85%;
+    width: 55%;
+    border: solid white 4px;
   }
 }
 .about-middle .about-info {
@@ -382,7 +399,7 @@ footer {
 }
 @media (max-width: 500px) {
   .about-middle .about-info h1 {
-    font-size: 4.4rem;
+    font-size: 4rem;
   }
 }
 .about-middle .about-info h2 {
@@ -444,6 +461,11 @@ footer {
     white-space: pre;
   }
 }
+@media (max-width: 500px) {
+  .about-right h2 {
+    font-size: 2.4rem;
+  }
+}
 .about-right p {
   font-size: 2rem;
   margin: 1rem 0;
@@ -455,6 +477,11 @@ footer {
   .about-right p:not(:last-child):after {
     content: ', ';
     white-space: pre;
+  }
+}
+@media (max-width: 500px) {
+  .about-right p {
+    font-size: 1.6rem;
   }
 }
 @media (max-width: 800px) {
@@ -505,6 +532,11 @@ footer {
 .cta-bottom {
   top: 98%;
 }
+@media (max-width: 500px) {
+  .cta-bottom {
+    top: 96%;
+  }
+}
 .cta-name {
   font-size: 8rem;
 }
@@ -531,6 +563,11 @@ footer {
     font-size: 4rem;
   }
 }
+@media (max-width: 500px) {
+  .cta-text {
+    display: none;
+  }
+}
 .cta-btn {
   font-size: 3rem;
   cursor: pointer;
@@ -544,6 +581,17 @@ footer {
   background: whitesmoke;
   padding: 8rem 0 0;
 }
+@media (max-width: 800px) {
+  .home-container .projects-section {
+    height: initial;
+    padding: 8rem 0;
+  }
+}
+@media (max-width: 500px) {
+  .home-container .projects-section {
+    padding: 6rem 0;
+  }
+}
 .home-container .projects-header {
   text-align: center;
   font-size: 6rem;
@@ -551,6 +599,11 @@ footer {
 @media (max-width: 800px) {
   .home-container .projects-header {
     font-size: 5rem;
+  }
+}
+@media (max-width: 500px) {
+  .home-container .projects-header {
+    font-size: 3rem;
   }
 }
 .home-container .projects-content {
@@ -578,6 +631,11 @@ footer {
     font-size: 3.2rem;
   }
 }
+@media (max-width: 500px) {
+  .home-container .project-title {
+    font-size: 2.4rem;
+  }
+}
 .home-container .project-desc {
   font-size: 3rem;
 }
@@ -586,13 +644,29 @@ footer {
     font-size: 2.4rem;
   }
 }
+@media (max-width: 500px) {
+  .home-container .project-desc {
+    font-size: 1.8rem;
+  }
+}
 .home-container .project-links {
   display: flex;
   margin: 1rem 0;
 }
+@media (max-width: 500px) {
+  .home-container .project-links {
+    justify-content: center;
+  }
+}
 .home-container .project-links a,
 .home-container .project-links p {
   font-size: 2rem;
+}
+@media (max-width: 500px) {
+  .home-container .project-links a,
+  .home-container .project-links p {
+    font-size: 1.6rem;
+  }
 }
 .home-container .project-links p {
   padding: 0 2rem;
@@ -603,6 +677,16 @@ footer {
   padding-left: 20px;
   margin-bottom: 1rem;
 }
+@media (max-width: 500px) {
+  .home-container .project-responsibility li {
+    font-size: 1.6rem;
+  }
+}
 .home-container .project-tech {
   font-size: 2rem;
+}
+@media (max-width: 500px) {
+  .home-container .project-tech {
+    font-size: 1.6rem;
+  }
 }
