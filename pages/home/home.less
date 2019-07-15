@@ -59,7 +59,11 @@
         border-radius: 50%;
 
         @media @tablet {
-            width: 50%;
+            width: 60%;
+        }
+
+        @media @phone {
+            width: 85%;
         }
     }
     
@@ -72,10 +76,18 @@
             @media @tablet {
                 font-size: 6rem;
             }
+
+            @media @phone {
+                font-size: 4.4rem;
+            }
         }
     
         h2 {
             font-size: 4rem;
+
+            @media @phone {
+                font-size: 3rem;
+            }
         }
     }
     
@@ -87,13 +99,17 @@
         a {
             font-size: 3rem;
             color: white;
+
+            @media @phone {
+                font-size: 2rem;
+            }
         }
     
         p {
             font-size: 3rem;
             padding: 0 2rem;
 
-            @media @tablet {
+            @media @phone {
                 font-size: 2rem;
             }
         }

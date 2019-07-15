@@ -7,6 +7,11 @@ footer {
     display: flex;
     justify-content: center;
     padding-top: 2rem;
+
+    @media @phone {
+        flex-direction: column;
+        align-items: center;
+    }
 }
 
 .footer-prof-img {
@@ -14,15 +19,36 @@ footer {
     border-radius: 50%;
     border: solid white 4px;
     margin: 4rem;
+
+    @media @phone {
+        width: 125px;
+        margin: 1rem;
+    }
 }
 
 .footer-info {
     align-self: center;
+
+    @media @phone {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    h1 {
+        @media @phone {
+            font-size: 3rem;
+        }
+    }
+
+    h2 {
+        @media @phone {
+            font-size: 2rem;
+        }
+    }
 }
 
 .footer-icon-bar {
-    // display:flex;
-    // justify-content: space-around;
     margin-top: 1rem;
 
     a {
@@ -39,4 +65,9 @@ footer {
     text-align: center;
     font-size: 2.4rem;
     padding-bottom: 2rem;
+
+    @media @phone {
+        font-size: 2rem;
+        padding: 2rem 0;
+    }
 }

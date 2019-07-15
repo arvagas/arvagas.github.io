@@ -8,16 +8,40 @@ header {
     padding: 20px;
     transition: 0.5s;
 
+    @media @phone {
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    .mobile-btn {
+        display: none;
+        align-self: center;
+    
+        @media @phone {
+            display: block;
+        }
+    }
+
     nav {
+        display: flex;
         text-align: right;
         align-self: center;
         max-width: 350px;
-        width: 100%
+
+        @media @phone {
+            flex-direction: column;
+            align-items: center;
+            width: 100%;
+        }
     }
 }
 
 .header-name {
     font-size: 2.4rem;
+
+    @media @phone {
+        display: none;
+    }
 }
 
 .header-links {
@@ -25,6 +49,21 @@ header {
     margin-right: 50px;
     text-decoration: none;
     cursor: pointer;
+
+    @media @phone {
+        margin-right: 0;
+        padding: 10px 0;
+        border-top: solid white 1px;
+        width: 100%;
+
+        &:first-child {
+            margin-top: 1rem;
+        }
+
+        &:last-child {
+            border-bottom: solid white 1px;
+        }
+    }
 
     &:visited {
         color: white;
