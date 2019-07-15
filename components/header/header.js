@@ -12,12 +12,9 @@ $(document).ready(() => {
 })
 
 // Open or close when mobile button is clicked
-$(document).ready(() => {
-    $('.mobile-btn').click(() => {
-        $('.nav-container').slideToggle()
-    })
+$('.mobile-btn').click(() => {
+    $('.nav-container').slideToggle()
 })
-
 
 
 // Close menu when windows resizes
