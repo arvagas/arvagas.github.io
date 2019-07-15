@@ -181,6 +181,9 @@ header nav {
   text-decoration: none;
   cursor: pointer;
 }
+.header-links:visited {
+  color: white;
+}
 .header-links:last-child {
   margin-right: 0;
 }
@@ -295,13 +298,7 @@ footer {
   align-self: center;
   position: absolute;
   bottom: 1%;
-}
-.projects-section {
-  display: flex;
-  flex-direction: column;
-  align-content: center;
-  position: relative;
-  height: 100vh;
+  cursor: pointer;
 }
 .cta-image {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/cta/banner.jpg);
@@ -333,8 +330,14 @@ footer {
 }
 .cta-btn {
   font-size: 3rem;
+  cursor: pointer;
 }
 .home-container .projects-section {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  position: relative;
+  height: 100vh;
   background: whitesmoke;
   padding: 10rem 0 0;
 }
