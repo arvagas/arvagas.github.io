@@ -1,0 +1,186 @@
+.about-section {
+    color: white;
+    background: linear-gradient(#3f1542, #54135c);
+    padding: 0 4rem;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    height: 100vh;
+    position: relative;
+}
+
+.about-content {
+    display: flex;
+    justify-content: space-around;
+
+    @media @tablet {
+        flex-direction: column;
+    }
+}
+
+.about-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 30%;
+
+    @media @tablet {
+        order: 3;
+        width: 100%;
+    }
+
+    p {
+        font-size: 2rem;
+        margin: 1rem 0;
+    }
+
+    .about-quote {
+        @media @tablet {
+            display: none;
+        }
+    }
+}
+
+.about-middle {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+
+    @media @tablet {
+        width: 100%;
+    }
+
+    .about-img {
+        align-self: center;
+        max-width: 100%;
+        height: auto;
+        border: solid white 8px;
+        border-radius: 50%;
+
+        @media @tablet {
+            width: 60%;
+        }
+
+        @media @phone {
+            width: 85%;
+        }
+    }
+    
+    .about-info {
+        text-align: center;
+        
+        h1 {
+            font-size: 8rem;
+
+            @media @tablet {
+                font-size: 6rem;
+            }
+
+            @media @phone {
+                font-size: 4.4rem;
+            }
+        }
+    
+        h2 {
+            font-size: 4rem;
+
+            @media @phone {
+                font-size: 3rem;
+            }
+        }
+    }
+    
+    .about-socials {
+        display: flex;
+        justify-content: center;
+        margin-top: 1rem;
+    
+        a {
+            font-size: 3rem;
+            color: white;
+
+            @media @phone {
+                font-size: 2rem;
+            }
+        }
+    
+        p {
+            font-size: 3rem;
+            padding: 0 2rem;
+
+            @media @phone {
+                font-size: 2rem;
+            }
+        }
+    }
+}
+
+.about-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 30%;
+    text-align: right;
+
+    @media @tablet {
+        text-align: left;
+        width: 100%;
+        margin: 1rem 0;
+    }
+
+    h2 {
+        font-size: 3.6rem;
+        text-decoration: underline;
+
+        @media @tablet {
+            font-size: 3.2rem;
+            text-decoration: none;
+
+            &:after {
+                content: ': ';
+                white-space: pre;
+            }
+        }
+    }
+
+    p {
+        font-size: 2rem;
+        margin: 1rem 0;
+
+        @media @tablet {
+            margin: 0;
+            
+            &:not(:last-child):after {
+                content: ', ';
+                white-space: pre;
+            }
+        }
+    }
+
+    .about-stack {
+
+        @media @tablet {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: baseline;
+        }
+    }
+
+    .about-skills {
+
+        @media @tablet {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: baseline;
+        }
+    }
+}
+
+.about-btn {
+    font-size: 3rem;
+    align-self: center;
+    position: absolute;
+    bottom: 1%;
+    cursor: pointer;
+}
