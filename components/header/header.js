@@ -2,7 +2,7 @@
 $(document).ready(() => {
     $(window).scroll(() => {
         let scroll = $(window).scrollTop()
-        let transOne = $(window).height() - $('header').height()
+        let transOne = $(window).height() - $('header').outerHeight()
         if (scroll > transOne) {
             $('header').addClass('header-trans-one')
         } else {
@@ -18,8 +18,6 @@ $(document).ready(() => {
     })
 })
 
-
-
 // Close menu when windows resizes
 $(document).ready(() => {
     $(window).resize(() => {
@@ -27,7 +25,6 @@ $(document).ready(() => {
         else $('.nav-container').slideUp()
     })
 })
-
 
 // Close menu when scroll
 $(document).ready(() => {
